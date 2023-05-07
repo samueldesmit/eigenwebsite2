@@ -156,43 +156,127 @@ main {
 .work div {
     min-width: 350px;
     height: 350px;
-    background-color: red;
+    /*background-color: red;*/
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: rgba(255, 255, 255, 0);
+    align-items: flex-end;
+    color: rgba(0, 0, 0, 0.8);
     transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+
 
 }
 
 .work div:hover {
     transition: all 0.3s ease-in-out;
-    color: rgba(255, 255, 255, 1);
-    opacity: 0.5 ;
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
 }
 
 .projects {
     background-repeat: no-repeat;
     background-size: cover;
     color: rgba(255, 255, 255, 0);
+    /*border-radius: 10px;*/
 }
 
+.projects p {
+    font-size: 20px;
+    margin: 0 0 30px 0;
+    /*transition: all 0.3s ease-in-out;*/
+}
+
+.project-1:hover {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 0%),
+    url("assets/modularsketchbook.jpg");
+    transition: all 0.3s ease-in-out;
+}
 
 .project-1 {
-    background-image: url("assets/modularsketchbook.jpg");
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 80%),
+    url("assets/modularsketchbook.jpg");
+}
+
+.project-2:hover {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 0%),
+    url("assets/Profiel foto.jpg");
+    transition: all 0.3s ease-in-out;
 }
 
 .project-2 {
-    background-image: url("assets/Profiel foto.jpg");
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 80%), url("assets/Profiel foto.jpg");
 }
+
+.project-3:hover {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 0%),
+    url("assets/FUIS-dusk.jpg");
+    transition: all 0.3s ease-in-out;
+}
+
 .project-3 {
-    background-image: url("assets/FUIS-dusk.jpg");
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 80%), url("assets/FUIS-dusk.jpg");
 }
+
+.project-4:hover {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 0%),
+    url("assets/TheNaturalLight.jpg");
+    transition: all 0.3s ease-in-out;
+}
+
 .project-4 {
-    background-image: url("assets/TheNaturalLight.jpg");
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 80%), url("assets/TheNaturalLight.jpg");
 }
 
 
+.project-5:hover {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 0%),
+    url("assets/Anti-Social-Social-Club.png");
+    transition: all 0.3s ease-in-out;
+}
+
+.project-5 {
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 80%), url("assets/Anti-Social-Social-Club.png");
+}
+
+
+.project-6:hover {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 0%),
+    url("assets/koala.jpg");
+    transition: all 0.3s ease-in-out;
+}
+
+.project-6 {
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 80%), url("assets/koala.jpg");
+}
+
+.project-7:hover {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 0%),
+    url("assets/trio-petenitsa.jpeg");
+    transition: all 0.3s ease-in-out;
+}
+
+
+.project-7 {
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 80%), url("assets/trio-petenitsa.jpeg");
+}
+
+.project-8:hover {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 0%),
+    url("assets/disseminate.jpg");
+    transition: all 4.3s ease-in-out;
+}
+
+.project-8 {
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(9, 9, 255, 0) 80%), url("assets/disseminate.jpg");
+}
 
 .namens {
     width: 800px;
@@ -241,7 +325,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100vw;
-    height: 100px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -265,6 +349,8 @@ footer a {
 }
 
 @media (max-width: 1081px) {
+
+
     .hamburger {
         display: block;
     }
@@ -290,7 +376,7 @@ footer a {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
         text-align: center;
         transition: 0.3s;
         background-color: rgba(255, 255, 255, 0.8);
@@ -323,11 +409,11 @@ footer a {
     }
 
     .home img {
-        width: 500px;
+        width: 600px;
     }
 
     .work img {
-        width: 500px;
+        min-width: 600px;
     }
 }
 
