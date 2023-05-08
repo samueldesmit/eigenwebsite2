@@ -137,6 +137,7 @@ main {
     /*background-color: white;*/
     /*background-color: white;*/
     padding: 100px 0;
+    /*margin: 0 150px;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -144,7 +145,7 @@ main {
     flex-wrap: wrap;
     flex-basis: 100vh;
     text-align: center;
-    width: 800px;
+    width: 100vw;
     gap: 20px;
     /*border: 1px solid black;*/
 }
@@ -325,7 +326,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100vw;
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -338,14 +339,15 @@ footer a {
 }
 
 .fa-brands {
-    font-size: 50px;
+    font-size: 40px;
+    /*margin: 50px 0;*/
     transition: all 0.3s ease-in-out;
 
 }
 
 .fa-brands:hover {
     transition: all 0.3s ease-in-out;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 @media (max-width: 1081px) {
